@@ -33,7 +33,12 @@ namespace WaConhecendoComponentes
             ListItem li;
             for (int i = 0; i < lbEndereco.Items.Count; i++)
             {
-
+                li = lbEndereco.Items[i];
+                if (li.Selected)
+                {
+                    li.Selected = false;
+                    DlSites.Items.Add(li);
+                }
             }
         }
 
