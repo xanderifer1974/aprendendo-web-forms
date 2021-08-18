@@ -23,15 +23,22 @@ namespace WaConhecendoComponentes
 
         protected void btnExecutar_Click(object sender, EventArgs e)
         {
-            lbDados.Items.Clear();
+            //lbDados.Items.Clear();
             ListItem li = DlNumeros.SelectedItem;
             int n = Convert.ToInt32(li.Value);
             int t = 0;
             for (int i = 0; i < 11; i++)
             {
                 t = i * n;
-                lbDados.Items.Add(i.ToString() + "x" + n.ToString() + " = " + t.ToString());
+                //lbDados.Items.Add(i.ToString() + "x" + n.ToString() + " = " + t.ToString());
+                TbDados.Rows[i].Cells[0].Text = n.ToString();
+                TbDados.Rows[i].Cells[4].Text = t.ToString();
             }
+
+        }
+
+        protected void lbDados_SelectedIndexChanged()
+        {
 
         }
     }
