@@ -9,11 +9,19 @@
 <body style="width: 1800px; height: 149px">
     <form id="form1" runat="server">
         <div>
-            <asp:BulletedList ID="blLista" runat="server" BorderStyle="None" BulletStyle="Square" DisplayMode="LinkButton" OnClick="blLista_Click" >
+            
+            <asp:BulletedList ID="blLista" runat="server" BorderStyle="None" BulletStyle="Square" DisplayMode="LinkButton" OnClick="blLista_Click" Visible="False" >
                 <asp:ListItem>Par ou Impar</asp:ListItem>
                 <asp:ListItem>Calcula o  Fatorial</asp:ListItem>
             </asp:BulletedList> 
-            <br />
+            <asp:RadioButtonList ID="RdBtnListSelecionar" runat="server" AutoPostBack="True" OnSelectedIndexChanged="RdBtnListSelecionar_SelectedIndexChanged">
+                <asp:ListItem>Par ou Impar</asp:ListItem>
+                <asp:ListItem>Fatorial</asp:ListItem>
+            </asp:RadioButtonList>
+            <%-- <asp:RadioButton ID="RadioButton1" runat="server" Text="Par ou Impar" GroupName="G1" />
+             <br />
+            <asp:RadioButton ID="RadioButton2" runat="server" OnCheckedChanged="RadioButton2_CheckedChanged" Text="Calcula Fatorial" GroupName="G1" />
+            <br />--%>
             <asp:Panel ID="pnParOuImpar" runat="server" Visible="False">
                 <asp:Label ID="Label1" runat="server" Text="Verificar se o número informado  é par ou impar"></asp:Label>
                 <br />

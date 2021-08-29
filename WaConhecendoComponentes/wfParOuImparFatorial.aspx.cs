@@ -43,5 +43,27 @@ namespace WaConhecendoComponentes
 
             LResp1.Text = txt;
         }
+
+        protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void RdBtnListSelecionar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pnParOuImpar.Visible = false;
+            pnFatorial.Visible = false;
+            if (RdBtnListSelecionar.SelectedIndex == 0)
+            {
+                pnParOuImpar.Visible = true;
+            }
+            else
+            {
+                pnFatorial.Visible = true;
+            }
+
+           
+
+        }
     }
 }
