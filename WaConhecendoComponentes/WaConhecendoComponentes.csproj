@@ -67,8 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imagens\day-icon-2.png" />
+    <Content Include="imagens\dia.jpg" />
+    <Content Include="imagens\noite.jpg" />
     <Content Include="Web.config" />
     <Content Include="wfComponente1.aspx" />
+    <Content Include="wfCursos.aspx" />
     <Content Include="wfDiasDeVida.aspx" />
     <Content Include="wfParOuImparFatorial.aspx" />
     <Content Include="wfTabuada.aspx" />
@@ -81,6 +85,13 @@
     </Compile>
     <Compile Include="wfComponente1.aspx.designer.cs">
       <DependentUpon>wfComponente1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfCursos.aspx.cs">
+      <DependentUpon>wfCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfCursos.aspx.designer.cs">
+      <DependentUpon>wfCursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="wfDiasDeVida.aspx.cs">
       <DependentUpon>wfDiasDeVida.aspx</DependentUpon>
