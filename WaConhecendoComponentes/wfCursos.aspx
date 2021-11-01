@@ -15,6 +15,10 @@
     <form id="form1" runat="server">
         <div>
             <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/propraganda.xml" Target="_blank" />
+            <asp:Literal ID="Literal1" runat="server" Text="&lt;H1&gt; Definições de Dias e Noites&lt;/h1&gt;"></asp:Literal>
+            <br />
+        </div>
+        <div>            
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View1" runat="server">
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="500px" ImageUrl="~/imagens/dia.jpg" OnClick="ImageButton1_Click" Width="700px" />
