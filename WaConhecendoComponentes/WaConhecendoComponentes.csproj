@@ -70,6 +70,7 @@
     <Content Include="imagens\day-icon-2.png" />
     <Content Include="imagens\dia.jpg" />
     <Content Include="imagens\noite.jpg" />
+    <Content Include="propraganda.xml" />
     <Content Include="Web.config" />
     <Content Include="wfComponente1.aspx" />
     <Content Include="wfCursos.aspx" />

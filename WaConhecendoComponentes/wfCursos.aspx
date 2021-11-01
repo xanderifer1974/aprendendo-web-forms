@@ -14,6 +14,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/propraganda.xml" Target="_blank" />
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View1" runat="server">
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="500px" ImageUrl="~/imagens/dia.jpg" OnClick="ImageButton1_Click" Width="700px" />

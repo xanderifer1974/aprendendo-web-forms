@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/imagens/dia.jpg</ImageUrl>
+    <NavigateUrl>https://www.significados.com.br/dias-uteis/</NavigateUrl>
+    <AlternateText>
+     Dia, ou dias úteis
+    </AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>Dia</Keyword>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>~/imagens/noite.jpg</ImageUrl>
+    <NavigateUrl>https://www.dicio.com.br/noite/</NavigateUrl>
+    <AlternateText>Noite or Nigth</AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>Noite</Keyword>
+  </Ad>  
+</Advertisements> 
