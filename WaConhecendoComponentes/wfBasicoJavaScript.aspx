@@ -19,7 +19,7 @@
         <div>
             <asp:Image ID="Image1" runat="server" ImageUrl="~/imagens/day-icon-2.png" OnMouseOver="ExibeMensagem()" />
             <br />
-            <asp:Button ID="btbMensagem" runat="server" OnClick="btbMensagem_Click" Text="Exibir Mensagem!" Width="567px" />
+            <asp:Button ID="btbMensagem" runat="server" OnClick="btbMensagem_Click" Text="Exibir Mensagem!" Width="567px" OnClientClick="ExibeMensagemDicas()" />
         </div>
     </form>
 </body>

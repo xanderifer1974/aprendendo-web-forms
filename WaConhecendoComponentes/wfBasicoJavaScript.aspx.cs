@@ -11,7 +11,9 @@ namespace WaConhecendoComponentes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            btbMensagem.Attributes.Add("onClick", "ExibeMensagemDicas()");
+            //btbMensagem.Attributes.Add("onClick", "ExibeMensagemDicas()");
+
+            //Foi aplicado na propriedade OnClientClick do componente, o evento ExibeMensagensDica()
 
         }
 
