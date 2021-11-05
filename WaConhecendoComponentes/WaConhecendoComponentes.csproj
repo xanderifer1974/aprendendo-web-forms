@@ -69,8 +69,12 @@
   <ItemGroup>
     <Content Include="imagens\day-icon-2.png" />
     <Content Include="imagens\dia.jpg" />
+    <Content Include="imagens\dias_de-vida.jpg" />
     <Content Include="imagens\noite.jpg" />
     <Content Include="imagens\parceiros.png" />
+    <Content Include="imagens\par_ou_impar.png" />
+    <Content Include="imagens\tabuada.jpg" />
+    <Content Include="index.aspx" />
     <Content Include="propraganda.xml" />
     <Content Include="Web.config" />
     <Content Include="wfAlteraTamanhoFonte.aspx" />
@@ -83,6 +87,13 @@
     <Content Include="wfTabuada.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="wfAlteraTamanhoFonte.aspx.cs">
       <DependentUpon>wfAlteraTamanhoFonte.aspx</DependentUpon>
