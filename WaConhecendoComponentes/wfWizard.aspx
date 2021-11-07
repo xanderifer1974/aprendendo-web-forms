@@ -15,7 +15,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="auto-style1">
-            <asp:Wizard ID="Wizard1" runat="server" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" Height="607px" Width="930px" ActiveStepIndex="1" CancelButtonText="Cancelar" FinishCompleteButtonText="Finalizar" FinishPreviousButtonText="Anterior" StartNextButtonText="Próximo">
+            <asp:Wizard ID="Wizard1" runat="server" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" Height="607px" Width="930px" ActiveStepIndex="0" CancelButtonText="Cancelar" FinishCompleteButtonText="Finalizar" FinishPreviousButtonText="Anterior" OnFinishButtonClick="Wizard1_FinishButtonClick" StartNextButtonText="Próximo">
                 <HeaderStyle BackColor="#284E98" BorderColor="#EFF3FB" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" Font-Size="0.9em" ForeColor="White" HorizontalAlign="Center" />
                 <NavigationButtonStyle BackColor="White" BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" />
                 <SideBarButtonStyle BackColor="#507CD1" Font-Names="Verdana" ForeColor="White" />
@@ -23,7 +23,7 @@
                 <StepStyle Font-Size="0.8em" ForeColor="#333333" />
                 <WizardSteps>
                     <asp:WizardStep runat="server" title="Dados Básicos">
-                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text="Nome"></asp:Label>
                         <br />
                         <asp:TextBox ID="txtNome" runat="server" Width="592px"></asp:TextBox>
                         <br />
