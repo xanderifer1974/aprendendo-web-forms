@@ -85,6 +85,7 @@
     <Content Include="wfParOuImparFatorial.aspx" />
     <Content Include="wfSitesParceiros.aspx" />
     <Content Include="wfTabuada.aspx" />
+    <Content Include="wfWizard.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="index.aspx.cs">
@@ -150,6 +151,13 @@
     </Compile>
     <Compile Include="wfTabuada.aspx.designer.cs">
       <DependentUpon>wfTabuada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfWizard.aspx.cs">
+      <DependentUpon>wfWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfWizard.aspx.designer.cs">
+      <DependentUpon>wfWizard.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
