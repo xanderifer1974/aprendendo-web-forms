@@ -21,7 +21,14 @@
             <asp:TextBox ID="txtNome" runat="server" Width="512px"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rValNome" runat="server" ControlToValidate="txtNome" ErrorMessage="O nome é obrigatório" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="Senha"></asp:Label>
+            <asp:TextBox ID="txtSenha1" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RValSenha" runat="server" ControlToValidate="txtSenha1" ErrorMessage="Senha Obrigatória" ForeColor="Red"></asp:RequiredFieldValidator>
+            <br />
+            <br />
             <asp:Button ID="btnEnviar" runat="server" Text="Enviar" />
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ShowMessageBox="True" ShowSummary="False" />
         </asp:Panel>
     </form>
 </body>
