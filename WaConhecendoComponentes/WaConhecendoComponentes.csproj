@@ -85,6 +85,7 @@
     <Content Include="wfParOuImparFatorial.aspx" />
     <Content Include="wfSitesParceiros.aspx" />
     <Content Include="wfTabuada.aspx" />
+    <Content Include="wfValidation.aspx" />
     <Content Include="wfWizard.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +152,13 @@
     </Compile>
     <Compile Include="wfTabuada.aspx.designer.cs">
       <DependentUpon>wfTabuada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfValidation.aspx.cs">
+      <DependentUpon>wfValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfValidation.aspx.designer.cs">
+      <DependentUpon>wfValidation.aspx</DependentUpon>
     </Compile>
     <Compile Include="wfWizard.aspx.cs">
       <DependentUpon>wfWizard.aspx</DependentUpon>
