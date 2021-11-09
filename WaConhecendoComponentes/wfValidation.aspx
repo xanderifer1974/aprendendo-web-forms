@@ -22,6 +22,11 @@
             <asp:RequiredFieldValidator ID="rValNome" runat="server" ControlToValidate="txtNome" ErrorMessage="O nome é obrigatório" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <br />
+            <asp:Label ID="Label5" runat="server" Text="Email"></asp:Label>
+            <asp:TextBox ID="txtEmail" runat="server" Width="493px"></asp:TextBox>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Informe um e-mail válido" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+            <br />
+            <br />
             <asp:Label ID="Label4" runat="server" Text="Idade"></asp:Label>
             <asp:TextBox ID="txtIdade" runat="server"></asp:TextBox>
             <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtIdade" ErrorMessage="Valor fora da faixa permitida" ForeColor="#FF3300" MaximumValue="100" MinimumValue="1" Type="Integer"></asp:RangeValidator>
