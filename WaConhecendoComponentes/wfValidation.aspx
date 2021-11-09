@@ -23,8 +23,13 @@
             <br />
             <br />
             <asp:Label ID="Label2" runat="server" Text="Senha"></asp:Label>
-            <asp:TextBox ID="txtSenha1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtSenha1" runat="server" TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RValSenha" runat="server" ControlToValidate="txtSenha1" ErrorMessage="Senha Obrigatória" ForeColor="Red"></asp:RequiredFieldValidator>
+            <br />
+            <br />
+            <asp:Label ID="Label3" runat="server" Text="Repetir Senha"></asp:Label>
+            <asp:TextBox ID="txtSenhaConf" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtSenha1" ControlToValidate="txtSenhaConf" ErrorMessage="As senhas informadas não são iguais" ForeColor="#FF3300"></asp:CompareValidator>
             <br />
             <br />
             <asp:Button ID="btnEnviar" runat="server" Text="Enviar" />
