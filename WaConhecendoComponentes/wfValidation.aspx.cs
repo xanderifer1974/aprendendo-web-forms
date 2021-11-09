@@ -13,5 +13,10 @@ namespace WaConhecendoComponentes
         {
 
         }
+
+        protected void txtSenhaConf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
