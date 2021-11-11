@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfValidation.aspx.cs" Inherits="WaConhecendoComponentes.wfValidation" %>
 
+<%@ Register src="wucMenu.ascx" tagname="wucMenu" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -15,6 +17,7 @@
 <body style="width: 1154px; height: 442px">
     <form id="form1" runat="server" class="auto-style1">
         <div>
+            <uc1:wucMenu ID="wucMenu1" runat="server" />
         </div>
         <asp:Panel ID="Panel1" runat="server" BackColor="#66CCFF" GroupingText="Validação de Campos" Height="406px" Width="1031px">
             <asp:Label ID="Label1" runat="server" Text="Nome"></asp:Label>

@@ -82,11 +82,13 @@
     <Content Include="wfComponente1.aspx" />
     <Content Include="wfCursos.aspx" />
     <Content Include="wfDiasDeVida.aspx" />
+    <Content Include="wfMenu.aspx" />
     <Content Include="wfParOuImparFatorial.aspx" />
     <Content Include="wfSitesParceiros.aspx" />
     <Content Include="wfTabuada.aspx" />
     <Content Include="wfValidation.aspx" />
     <Content Include="wfWizard.aspx" />
+    <Content Include="wucMenu.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="index.aspx.cs">
@@ -132,6 +134,13 @@
     <Compile Include="wfDiasDeVida.aspx.designer.cs">
       <DependentUpon>wfDiasDeVida.aspx</DependentUpon>
     </Compile>
+    <Compile Include="wfMenu.aspx.cs">
+      <DependentUpon>wfMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfMenu.aspx.designer.cs">
+      <DependentUpon>wfMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wfParOuImparFatorial.aspx.cs">
       <DependentUpon>wfParOuImparFatorial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,6 +175,13 @@
     </Compile>
     <Compile Include="wfWizard.aspx.designer.cs">
       <DependentUpon>wfWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wucMenu.ascx.cs">
+      <DependentUpon>wucMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wucMenu.ascx.designer.cs">
+      <DependentUpon>wucMenu.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

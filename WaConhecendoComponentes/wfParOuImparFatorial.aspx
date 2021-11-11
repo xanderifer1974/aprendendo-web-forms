@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfParOuImparFatorial.aspx.cs" Inherits="WaConhecendoComponentes.wfParOuImparFatorial" %>
 
+<%@ Register src="wucMenu.ascx" tagname="wucMenu" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,6 +11,8 @@
 <body style="width: 1800px; height: 149px">
     <form id="form1" runat="server">
         <div>
+            
+            <uc1:wucMenu ID="wucMenu1" runat="server" />
             
             <asp:BulletedList ID="blLista" runat="server" BorderStyle="None" BulletStyle="Square" DisplayMode="LinkButton" OnClick="blLista_Click" Visible="False" >
                 <asp:ListItem>Par ou Impar</asp:ListItem>

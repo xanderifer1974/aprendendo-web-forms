@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfDiasDeVida.aspx.cs" Inherits="WaConhecendoComponentes.wfDiasDeVida" %>
 
+<%@ Register src="wucMenu.ascx" tagname="wucMenu" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -35,6 +37,7 @@
 <body style="width: 1781px; height: 340px">
     <form id="form1" runat="server">
         <div>
+            <uc1:wucMenu ID="wucMenu1" runat="server" />
             <table style="width:100%;">
                 <tr>
                     <td class="auto-style5">
