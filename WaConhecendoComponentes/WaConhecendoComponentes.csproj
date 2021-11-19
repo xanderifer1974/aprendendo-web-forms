@@ -89,6 +89,7 @@
     <Content Include="wfData.aspx" />
     <Content Include="wfDiasDeVida.aspx" />
     <Content Include="wfGridView.aspx" />
+    <Content Include="wfListView.aspx" />
     <Content Include="wfMenu.aspx" />
     <Content Include="wfParOuImparFatorial.aspx" />
     <Content Include="wfSitesParceiros.aspx" />
@@ -168,6 +169,13 @@
     </Compile>
     <Compile Include="wfGridView.aspx.designer.cs">
       <DependentUpon>wfGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfListView.aspx.cs">
+      <DependentUpon>wfListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfListView.aspx.designer.cs">
+      <DependentUpon>wfListView.aspx</DependentUpon>
     </Compile>
     <Compile Include="wfMenu.aspx.cs">
       <DependentUpon>wfMenu.aspx</DependentUpon>
