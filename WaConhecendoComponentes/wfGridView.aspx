@@ -9,9 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="Id" DataSourceID="SqlDataSourceGridView" Width="710px">
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="Id" DataSourceID="SqlDataSourceGridView" Width="710px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <Columns>
-                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
                     <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
                     <asp:BoundField DataField="Nome" HeaderText="Nome" SortExpression="Nome" />
                     <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
@@ -41,6 +41,20 @@
                 </UpdateParameters>
             </asp:SqlDataSource>
         </div>
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Id" DataSourceID="SqlDataSourceGridView" ForeColor="Black" GridLines="Vertical" Height="50px" Visible="False" Width="706px">
+            <AlternatingRowStyle BackColor="White" />
+            <EditRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+            <Fields>
+                <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                <asp:BoundField DataField="Nome" HeaderText="Nome" SortExpression="Nome" />
+                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                <asp:CommandField ShowInsertButton="True" />
+            </Fields>
+            <FooterStyle BackColor="#CCCC99" />
+            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+            <RowStyle BackColor="#F7F7DE" />
+        </asp:DetailsView>
     </form>
 </body>
 </html>
